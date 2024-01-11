@@ -1,16 +1,77 @@
-# The URL the site will be built for
 base_url = "https://zola.zeabur.app"
-
-# Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
-
-# Whether to build a search index to be used later on by a JavaScript library
+highlight_code = true
 build_search_index = false
+generate_feed = true
+highlight_theme = "base16-ocean-light"
+default_language = "en"
 
-[markdown]
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
-highlight_code = false
+[languages.en]
+title = "Anatole"
+description = "A other zola theme"
+generate_feed = true
+taxonomies = [{ name = "tags" }]
 
-[extra]
-# Put all your custom variables here
+[languages.zh]
+title = "Anatole"
+description = "A other zola theme"
+generate_feed = true
+taxonomies = [{ name = "tags" }]
+
+[languages.en.translations]
+language_name = "English"
+about = "About"
+home = "Home"
+tags = "Tags"
+archive = "Archive"
+links = "Links"
+date_format = "%Y-%m-%d"
+next_page = "Next Page"
+last_page = "Last Page"
+
+[languages.zh.translations]
+language_name = "中文"
+home = "首页"
+about = "关于"
+tags = "标签"
+archive = "归档"
+links = "友链"
+date_format = "%Y-%m-%d"
+next_page = "下一页"
+last_page = "上一页"
+
+[languages.de.translations]
+language_name = "Deutsch"
+about = "Info"
+home = "Home"
+tags = "Kategorien"
+archive = "Archiv"
+links = "Links"
+date_format = "%d-%m-%Y"
+next_page = "Nächste Seite"
+last_page = "Vorherige Seite"
+
+[languages.sv.translations]
+language_name = "Svenska"
+about = "Info"
+home = "Hem"
+tags = "Etiketter"
+archive = "Arkiv"
+links = "Länkar"
+date_format = "%Y-%m-%d"
+next_page = "Nästa Sidan"
+last_page = "Sista Sidan"
+
+[extra.social]
+github = ""
+twitter = "w"
+facebook = ""
+instagram = "r"
+dribbble = "t"
+weibo = "y"
+linkedin = ""
+flickr = ""
+
+[extra.show]
+tags = true
+links = true
